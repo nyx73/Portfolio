@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Chavda's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand">Portfolio</span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <img src="01.jpg" class="card-img-top" alt="Rhythm Chavda">
+                    <div class="card-body">
+                        <h5 class="card-title">Rhythm Chavda</h5>
+                        <p class="card-text">Computer Engineering Student</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h1 class="card-title"><a href="#" class="text-decoration-none text-dark" data-toggle="modal" data-target="#aboutModal">About Me</a></h1>
+                        <div class="list-group">
+                            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#educationModal">Education</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#skillsModal">Skills</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="modal" data-target="#projectsModal">Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutModalLabel">Hello Guys...  </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>I'm Rhythm Chavda, an aspiring computer engineering student currently pursuing my diploma in Computer Engineering at Parul University. I have a passion for coding, problem-solving, and exploring new technologies. I'm enthusiastic about turning innovative ideas into reality through programming. In my free time, I enjoy designing and creating digital art. Welcome to my portfolio!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Modal -->
+    <div class="modal fade" id="educationModal" tabindex="-1" role="dialog" aria-labelledby="educationModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="educationModalLabel">Education</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Diploma in Computer Engineering</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Modal -->
+    <div class="modal fade" id="skillsModal" tabindex="-1" role="dialog" aria-labelledby="skillsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="skillsModalLabel">Skills</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Web Development, Problem Solving</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Modal -->
+    <div class="modal fade" id="projectsModal" tabindex="-1" role="dialog" aria-labelledby="projectsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal
+                -header">
+                <h5 class="modal-title" id="projectsModalLabel">Projects</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Portfolio Website</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Feedback Modal -->
+<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="feedbackModalLabel">Feedback</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <textarea class="form-control" rows="5" placeholder="Write your feedback here"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="bg-dark text-white  py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="mb-5">
+                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#feedbackModal">Give Feedback</button>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="mb-3">
+                    <p>Connect with me on:</p>
+                    <a href="https://www.linkedin.com/in/rhythmchavda" target="_blank" class="btn btn-primary btn-lg mb-3">
+                        <img src="linkedin.png" alt="LinkedIn" class="mr-1"> LinkedIn
+                    </a><br>
+                    <a href="https://github.com/nyx73" target="_blank" class="btn btn-primary btn-lg mb-3">
+                        <img src="github.png" alt="GitHub" class="mr-1"> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <p class="mr-5">&copy; 2024 Rhythm Chavda</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#aboutModal').modal('show');
+    });
+</script>
+</body>
+</html>
